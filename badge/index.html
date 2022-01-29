@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+        <!--TEXT WITH A BADGE-->
+        <div class="container">
+            <div class="badge small-badge">
+                <p>Text with a badge</p>
+                <span class="small-bg">12</span>
+            </div>
+        
+        <div class="badge large-badge">
+            <p>Text with large badge</p>
+            <span class="large-bg">4</span>
+        </div>
+
+        <div class="badge btn-badge">
+            <p>Button with a badge on the left</p>
+            <span class="btn-bg">8</span>
+            <button class="action-btn">Action</button>
+        </div>
+
+        <div class="badge btn-badge">
+            <p>Button toggles badge visibility</p>
+            <span class="toggle-bg">8</span>
+            <button class="action-btn" onclick="toggleFunction()">Hide</button>
+        </div>
+
+        <div class="badge icon-badge">
+            <p>Icon with a badge</p>
+            <a href="#"><i class="fas fa-home"></i></a>
+            <span class="icon-bg">8</span>
+        </div>
+
+    </div>
+
+    <script>
+        const toggleBg = document.querySelector(".toggle-bg");
+        const toggleFunction = () => {
+            if(toggleBg.style.display === "none") {
+                toggleBg.style.display = "block";
+            }
+            else {
+                toggleBg.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

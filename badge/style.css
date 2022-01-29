@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+body {
+    margin: 25px;
+    font-family: 'DM Sans', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.badge {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+p {
+    font-size: large;
+}
+.small-bg {
+    position: absolute;
+    top: 2px;
+    right: -22px;
+    background-color: blue;
+    padding: 6px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+}
+
+.large-bg {
+    position: absolute;
+    top: -5px;
+    right: -25px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-badge p {
+    margin-right: 20px;
+}
+.btn-bg {
+    position:absolute;
+    top: -5px;
+    right: 54px;
+    padding: 6px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+}
+.action-btn {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20%;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.action-btn:hover {
+    background-color: violet;
+    color: black;
+}
+.action-btn:active {
+    background-color: purple;
+}
+
+.toggle-bg {
+    position:absolute;
+    top: -5px;
+    right: -16px;
+    padding: 6px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+i {
+    font-size: 32px;
+    margin-left: 20px;
+    color: black;
+}
+.icon-bg {
+    position:absolute;
+    top: -4px;
+    right: -10px;
+    padding: 6px;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+}

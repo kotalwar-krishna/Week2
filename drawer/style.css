@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Raleway:wght@500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ul {
+    list-style-type: none;
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    background-color: wheat;
+
+}
+
+.container{
+    position: relative;
+}
+
+.container h2, .container h4{
+    position: relative;
+    background-color: white;
+    padding: 5px;
+}
+
+.container .drawer-component{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+.container .drawer-component ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container .drawer-component ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+
+.container .drawer-component ul li:hover{
+    background-color: #efefef;
+}
+
+.container .drawer-component ul li a{
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    font-weight: 600;
+
+}
+
+.container .drawer-component ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.container .drawer-component ul li a .icon i{
+    font-size: 24px;
+}
+
+.container .drawer-component ul li a .title{
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 60px;
+}

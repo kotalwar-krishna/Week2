@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+.header-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    display: flex;
+    width: 31rem;
+    justify-content: space-around;
+    background-color: blueviolet;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.4rem 1rem;
+}
+button {
+    flex-basis: 10%;
+    border: none;
+    background: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-position: center;
+    transition: background 0.8s;
+}
+header {
+    flex-basis: 40%;
+    margin-right: auto;
+    margin-left: 15px;
+    padding: 0.8rem;
+}
+i {
+    color: #fff;
+    font-size: 20px;
+}
+button:hover {
+    background: rebeccapurple radial-gradient(circle, transparent 1%, rebeccapurple 1%) center/15000%;
+}
+button:active {
+    background-color: violet;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.short-header {
+    padding: 0.1rem 1rem;
+}
+
+/*Collapsed header*/
+.collapsed-header {
+    width: 6rem;
+    border-bottom-right-radius: 25px;
+    padding: 0.2rem 0.6rem;
+}
+
+.prominant-header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+}
+.prominant-header header {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+.download-btn {
+    grid-row: inherit;
+    grid-column: 3/4;
+}
+/*Prominant and dense header*/
+.pd {
+   row-gap: 0;
+   grid-template-rows: 42px 42px;
+}
+
+/*Dense header */ 
+.dense {
+    padding: 0 1rem;
+}
+.dense button {
+    padding: 0;
+}
+
+/*Fixed header*/
+.fixed {
+    bottom: 0;
+}
